@@ -8,7 +8,7 @@ const path = require('path');
 const travelServer = express();
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://travel-website-frontend-five.vercel.app', // Updated origin for your Vercel frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
