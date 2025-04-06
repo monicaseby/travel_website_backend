@@ -3,7 +3,7 @@ const router = express.Router();
 const userController = require('./controllers/userController');
 const packageController = require('./controllers/packageController');
 const hotelController = require('./controllers/hotelController');
-const bookingController = require('./controllers/bookingController');
+const BookingController = require('./controllers/BookingController');
 const preferenceController = require('./controllers/preferenceController');
 const multer = require('multer');
 const path = require('path');
@@ -45,10 +45,10 @@ router.post('/signup', userController.register);
 router.post('/login', userController.login);
 
 
-router.post('/bookings', bookingController.addBooking);
-router.get('/bookings', bookingController.getBookings);
-router.put('/bookings/:id', bookingController.updateBookingStatus);
-router.delete('/bookings/:id', bookingController.deleteBooking); 
+router.post('/bookings', BookingController.addBooking);
+router.get('/bookings', BookingController.getBookings);
+router.put('/bookings/:id', BookingController.updateBookingStatus);
+router.delete('/bookings/:id', BookingController.deleteBooking); 
 
 
 router.post('/preferences', preferenceController.savePreference);
