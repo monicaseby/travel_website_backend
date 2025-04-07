@@ -48,7 +48,7 @@ router.post('/login', userController.login);
 router.post('/bookings', BookingController.addBooking);
 router.get('/bookings', BookingController.getBookings);
 router.put('/bookings/:id', BookingController.updateBookingStatus);
-router.delete('/bookings/:id', BookingController.deleteBooking); 
+router.delete('/bookings/:id', BookingController.deleteBooking);
 
 
 router.post('/preferences', preferenceController.savePreference);
